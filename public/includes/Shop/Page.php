@@ -62,8 +62,18 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
 
             try {
                 $category = MerchSys_Public::$client->getCategory();
-                $this->categories->current_cat_id = $category['id'];
-                $this->categories->current_cat = $category;
+                if (!empty($category)) {
+                    $catgoryDescription = MerchSys_Public::$client->getCategoryDescription($category['id']);
+                    if (!empty($catgoryDescription)) {
+                        $category = array_merge($category, $catgoryDescription);
+                    }
+                    $categoryMainImage = MerchSys_Public::$client->getMainImage($category['id']);
+                    if (!empty($categoryMainImage)) {
+                        $category['main_image'] = $categoryMainImage;
+                    }
+                    $this->categories->current_cat_id = $category['id'];
+                    $this->categories->current_cat = $category;
+                }
             } catch (Exception $e) {
 
             }
