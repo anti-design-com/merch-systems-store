@@ -65,6 +65,7 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
                 if (!empty($category)) {
                     $catgoryDescription = MerchSys_Public::$client->getCategoryDescription($category['id']);
                     if (!empty($catgoryDescription)) {
+                        unset($catgoryDescription['id']);
                         $category = array_merge($category, $catgoryDescription);
                     }
                     $categoryMainImage = MerchSys_Public::$client->getMainImage($category['id']);
