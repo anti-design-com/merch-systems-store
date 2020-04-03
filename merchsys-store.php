@@ -50,7 +50,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/Merchsys_Store.php';
  */
  
 // Extend MerchSys
-$response = new WPS_Extend_Plugin( 'merch-systems/merchsys.php', __FILE__, '1.0.0', 'merchsys_store' );
+$response = new WPS_Extend_Plugin( 'merch-systems/merchsys.php', __FILE__, '1.0.4', 'merchsys_store' );
 function run_merchsys_store() {
 	$plugin = new MerchSys_Store();
 	$plugin->run();
