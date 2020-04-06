@@ -1,17 +1,4 @@
 <?php
-
-/*
-Plugin Name: merch.systems Storefront
-Version: 1.0.0
-Description: Fully integrates your merch.systems online store into your Wordpress website
-Plugin URI: https://merch.systems
-Author: anti-design.com GmbH & Co. KG
-Author URI: http://anti-design.com
-
-@package merchsys
-@subpackage merchsys/includes
- */
-
 require_once plugin_dir_path(dirname(__FILE__)) . '../merch-systems/includes/Merchsys_Settings.php';
 require_once plugin_dir_path(dirname(__FILE__)) . 'includes/MerchsysStore_Settings.php';
 require_once plugin_dir_path(dirname(__FILE__)) . '../merch-systems/includes/Merchsys_I18n.php';
