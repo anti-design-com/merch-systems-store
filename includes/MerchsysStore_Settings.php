@@ -2,7 +2,7 @@
 class MerchSysStore_Settings extends MerchSys_Settings
 {
 
-    const PLUGIN_NAME = 'merch-systems-store';
+    const PLUGIN_NAME = 'merch-systems-storefront';
     const PLUGIN_VERSION = '1.0.0';
 
     /* Shortcodes definitions */

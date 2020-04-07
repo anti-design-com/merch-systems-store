@@ -8,8 +8,8 @@ Plugin URI: https://merch.systems
 Author: anti-design.com GmbH & Co. KG
 Author URI: http://anti-design.com
 
-@package merch-systems-store
-@subpackage merch-systems-store/includes
+@package merch-systems-storefront
+@subpackage merch-systems-storefront/includes
  */
 
 class MerchSysStore_Activator
