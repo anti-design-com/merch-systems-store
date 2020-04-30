@@ -148,7 +148,7 @@ class MerchSysStore_Public_Settings extends MerchSys_Public_Settings
             'required' => true,
             'label' => 'Street',
             'placeholder' => 'Street'),
-        array('name' => 'Number',
+        array('name' => 'number',
             'type' => 'text',
             'required' => true,
             'label' => 'Number',
