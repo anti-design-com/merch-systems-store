@@ -54,6 +54,9 @@ class MerchSys_Registration_Field extends MerchSysStore_Common_Base
         }
 
         $this->items = array($item);
-        $this->has_items = count($this->items > 0) ? true : false;
+        $this->has_items = false;
+        if (is_array($this->items) && count($this->items > 0)) {
+            $this->has_items = true;
+        }
     }
 }

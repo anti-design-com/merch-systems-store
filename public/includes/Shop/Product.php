@@ -47,7 +47,10 @@ class MerchSys_Shop_Product extends MerchSys_Shop_Base
                 }
             }
             $this->title = $product['name'];
-            $this->has_tracks = isset($product['tracks']) && count($product['tracks']) > 0 ? true : false;
+            $this->has_tracks = false;
+            if (isset($product['tracks']) && is_array($product['tracks']) && count($product['tracks']) > 0) {
+                $this->has_tracks = false;
+            }
             $this->amount = array();
             $max_amount = (($ma = get_option('merchsys_maxamount')) != null && $ma >= 1) ? intval($ma) : 10;
             for ($i = 1; $i <= $max_amount; $i++) {
