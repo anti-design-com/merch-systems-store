@@ -359,7 +359,11 @@ msgid "Your address"
 msgstr "Invoice address"
 
 #: public/includes/Settings.php:179
-msgid "Street and number"
+msgid "Street"
+msgstr ""
+
+#: public/includes/Settings.php:179
+msgid "Number"
 msgstr ""
 
 #: public/includes/Settings.php:180

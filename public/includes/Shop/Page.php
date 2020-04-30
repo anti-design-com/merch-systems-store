@@ -309,7 +309,8 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
                     MerchSys_Public::$user['country'][0],
                     MerchSys_Public::$user['zip'][0],
                     MerchSys_Public::$user['city'][0],
-                    MerchSys_Public::$user['street'][0]
+                    MerchSys_Public::$user['street'][0],
+                    MerchSys_Public::$user['number'][0]
                 );
             } catch (Exception $e) {
 
@@ -367,7 +368,8 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
                 $_POST['country'],
                 $_POST['zip'],
                 $_POST['city'],
-                $_POST['street']
+                $_POST['street'],
+                $_POST['number']
             );
             return $response;
         } catch (Exception $e) {

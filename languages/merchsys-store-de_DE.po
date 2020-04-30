@@ -378,8 +378,12 @@ msgid "Your address"
 msgstr "Deine Adresse"
 
 #: public/includes/Settings.php:179
-msgid "Street and number"
-msgstr "Straße und Hausnummer"
+msgid "Street"
+msgstr "Straße"
+
+#: public/includes/Settings.php:179
+msgid "Number"
+msgstr "Hausnummer"
 
 #: public/includes/Settings.php:180
 msgid "Postcode"
@@ -515,7 +519,10 @@ msgstr ""
 #~ msgstr "Warenkorb als Navigationspunkt hinzufügen?"
 
 #~ msgid "Street"
-#~ msgstr "Straße und Hausnummer"
+#~ msgstr "Straße"
+
+#~ msgid "Number"
+#~ msgstr "Hausnummer"
 
 #~ msgid ""
 #~ "Please select the page with the shop shortcode in your Merchsys settings "

@@ -146,8 +146,13 @@ class MerchSysStore_Public_Settings extends MerchSys_Public_Settings
         array('name' => 'street',
             'type' => 'text',
             'required' => true,
-            'label' => 'Street and number',
+            'label' => 'Street',
             'placeholder' => 'Street'),
+        array('name' => 'Number',
+            'type' => 'text',
+            'required' => true,
+            'label' => 'Number',
+            'placeholder' => 'Number'),
         array('name' => 'zip',
             'type' => 'text',
             'required' => true,
@@ -206,7 +211,8 @@ __('First name');
 __('Last name');
 __('Phone');
 __('Your address');
-__('Street and number');
+__('Street');
+__('Number');
 __('Postcode');
 __('City');
 __('Country');
