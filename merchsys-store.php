@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: merch.systems Storefront
-Version: 1.0.6
+Version: 1.0.7
 Description: Fully integrates your merch.systems online store into your Wordpress website
 Plugin URI: https://merch.systems
 Author: anti-design.com GmbH & Co. KG
-Author URI: http://anti-design.com
+Author URI: https://anti-design.com
  */
 
 // If this file is called directly, abort.

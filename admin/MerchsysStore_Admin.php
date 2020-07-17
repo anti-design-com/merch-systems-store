@@ -47,6 +47,7 @@ class MerchSysStore_Admin extends MerchSys_Admin
     public function register_merchsys_settings()
     {
         register_setting('merchsys_cart_group', 'merchsys_addmenu');
+        register_setting('merchsys_cart_group', 'merchsys_showcategories');
         register_setting('merchsys_cart_group', 'merchsys_showshopcarousel');
         //register_setting('merchsys_cart_group', 'merchsys_navigationname');
         register_setting('merchsys_cart_group', 'merchsys_showloginmenu');

@@ -11,6 +11,7 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
     public $categories;
     public $defaultcontent;
     public static $show_shop_carousel;
+    public static $show_categories;
 
     public function __construct($view = 'page')
     {
@@ -19,6 +20,7 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
         $this->version = MerchSysStore_Settings::PLUGIN_VERSION;
         $this->load_dependencies();
         self::$show_shop_carousel = intval(get_option('merchsys_showshopcarousel')) == 1 ? true : false;
+        self::$show_categories = intval(get_option('merchsys_showcategories')) == 1 ? true : false;
         $this->locale = MerchSys_Helper::get_locale();
         $this->currency = MerchSys_Public::$currency;
         $this->set_categories();
@@ -43,7 +45,7 @@ class MerchSys_Shop_Page extends MerchSysStore_Common_Page
     public function set_default_content()
     {
         $this->set_categories();
-        if ($this->categories->has_items !== false) {
+        if (self::$show_categories && $this->categories->has_items !== false) {
             $this->defaultcontent = $this->categories;
         } else {
 

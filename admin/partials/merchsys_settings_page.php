@@ -23,6 +23,14 @@ do_settings_sections('merchsys_cart_group');
 				</td>
 			</tr>
 			<tr valign="top">
+				<th scope="row"><?php _e('Show categories on default screen?', 'merchsys-store'); ?>:</th>
+				<td>
+					<label for="merchsys_showcategories">
+						<input type="checkbox" name="merchsys_showcategories" value="1" <?php echo (intval(get_option('merchsys_showcategories')) == 1 ? 'checked="checked"' : ''); ?>>
+					</label>
+				</td>
+			</tr>	
+			<tr valign="top">
 				<th scope="row"><?php _e('Show login/logout to navigation?', 'merch-systems-storefront');?>:</th>
 				<td>
 					<label for="merchsys_showloginmenu">
