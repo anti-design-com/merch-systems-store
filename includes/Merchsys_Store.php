@@ -95,8 +95,6 @@ class MerchSys_Store
     private function define_admin_hooks()
     {
         $plugin_admin = new MerchSysStore_Admin();
-        self::$loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_styles');
-        self::$loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts');
         self::$loader->add_action('admin_menu', $plugin_admin, 'add_merchsys_admin_page');
         self::$loader->add_action('admin_init', $plugin_admin, 'register_merchsys_settings');
         self::$loader->add_action('vc_before_init', $plugin_admin, 'map_vc_shortcodes');

@@ -11,17 +11,6 @@ class MerchSysStore_Admin extends MerchSys_Admin
         $this->version = MerchSysStore_Settings::PLUGIN_VERSION;
     }
 
-    public function enqueue_styles()
-    {
-        wp_enqueue_style($this->plugin_name . '-admin', plugin_dir_url(__FILE__) . 'css/' . $this->plugin_name . '-admin.css', array(), $this->version, 'all');
-    }
-
-    public function enqueue_scripts()
-    {
-        wp_register_script($this->plugin_name . '-admin', plugin_dir_url(__FILE__) . 'js/' . $this->plugin_name . '-admin.js', array('jquery'), $this->version, false);
-        wp_enqueue_script($this->plugin_name . '-admin');
-    }
-
     public function add_merchsys_admin_page()
     {
         add_submenu_page(

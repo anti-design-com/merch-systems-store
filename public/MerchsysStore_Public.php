@@ -57,8 +57,6 @@ class MerchSysStore_Public extends MerchSys_Public
         wp_enqueue_style($this->plugin_name . '-fancybox-css', plugin_dir_url(__FILE__) . 'css/jquery.fancybox.min.css', array(), $this->version, 'all');
         if (file_exists(self::$custom_theme_path . '/css/' . $this->plugin_name . '.css')) {
             wp_enqueue_style($this->plugin_name . '-css-custom', self::$custom_theme_url_path . '/css/' . $this->plugin_name . '.css', array(), $this->version, 'all');
-        } else {
-            wp_enqueue_style($this->plugin_name . '-css', plugin_dir_url(__FILE__) . 'css/' . $this->plugin_name . '.css', array(), $this->version, 'all');
         }
         wp_enqueue_style('wp-mediaelement');
     }
